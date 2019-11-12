@@ -1,70 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title> Ell's Practice Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {margin:0;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .navbar a {
   float: left;
-  display: block;
-  color: #DCDCDC;
+  font-size: 16px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.navbar a:hover {
-  background:rgb(169, 207, 207);
-  color: black;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px;
-}
 .navbar { display: flex; justify-content: center;}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.a{
+  text-align: center; }
+
 </style>
 </head>
 <body>
 
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="training.html">Training</a>
+  <a href="growth.html">Personal Growth</a>
+  <div class="dropdown">
+        <button class="dropbtn">Confrence Talk 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="mentoring.html">Mentoring 101</a>
+          <a href="whyctf.html">5W of CTF</a>
+          <a href="containers.html">Talks on Containers</a>
+          <a href="talks.html">All Talks</a>
+        </div>
+      </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Podcasting 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://chooselinux.show/hosts/ell">Choose Linux</a>
+      <a href="https://extras.show/hosts/ell">Jupiter Extras</a>
+      <a href="https://linuxunplugged.com/hosts/ell">Linux Unplugged</a>
+    </div>
+  </div> 
+  <a href="https://www.twitter.com/ell_o_punk">Twitter</a>
+</div>
 
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="talks.html">Conference Talks</a>
-    <a href="training.html">Training</a>
-    <a href="podcast.html">Podcasting</a>
-    <a href="growth.html">Personal Growth</a>
-    <a href="https://twitter.com/ell_o_punk">Twitter</a>
-  </div>
+</style>
+</head>
+<body>
 
-<title> Ell's Practice Website</title>
-  </head>
-  <body>
-
-<div class="main">
-
-<p
 <center><h2>The 5ws of CTF</h2></center>
 <strong>Abstract:</strong>
 Have you attended security conferences in the past and wondered why someone would spend hours huddled around their computers playing CTFs instead of enjoying the conference? 
 Have you considered playing but not sure your skills are up to par or that you would even know how to play?  In the 5 Ws of CTF's  we will break things down the way we did in grade school by answering the who, what, when, where and why of CTFs.
 We may even delve into the sixth and maybe most important "w" how.
 
-<center><h2>Goal Setting 101</h2></center>
-<a href="https://twitter.com/ell_o_punk?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ell_o_punk</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<br>
 
 </p>
 </div>
